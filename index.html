@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lina El Yacoubi - Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="assets/70cfaa8c-5dba-4697-9fd6-e5c62d15c539.png" style="border-radius: 30%;">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"  rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"  rel="stylesheet">
+  
+    <!-- My CSS code -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Lina's Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#how-i-work">How I Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#case-studies">Projects</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+  
+
+<body>
+  
+ <section class="container py-5 section-spacing" id="intro">
+  <div class="row align-items-center text-center text-md-start">
+    
+    
+    <div class="col-md-4 order-1 order-md-2 d-flex justify-content-center mb-4 mb-md-0">
+      <img src="assets/Lina.jpg" alt="Lina's photo" class="profile-pic img-fluid rounded-circle shadow-lg about-photo">
+    </div>
+
+    <div class="col-md-5 order-2 order-md-1">
+      <h1 class="fw-bold">Lina El Yacoubi</h1>
+      <p id="typewriter" class="typewriter-text text-center text-md-start">
+        Software Engineering Student
+      </p>
+      <p class="text-center text-md-start">Welcome to my Portfolio! 👋</p>
+      <div class="text-center text-md-start">
+        <a href="assets/LinaElYacoubi.pdf" id="resume-button" class="resume-button  btn-primary mt-2" target="_blank">
+          View My Resume
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="about" class="py-5 section-spacing">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Profile Photo -->
+      <div class="col-md-4 text-center mb-4 mb-md-0">
+        <img  src="assets/70cfaa8c-5dba-4697-9fd6-e5c62d15c539.png" alt="Lina El Yacoubi" class="img-fluid rounded-circle shadow-lg about-photo">
+      </div>
+
+      <!-- About Me Text -->
+      <div class="col-md-8">
+        <h1 class="fw-bold text-center mb-5 display-5 text-gradient" style="background-color: #2A928F;"> 🌟 About Me</h1>
+        <p class="lead">
+          Hi! I'm <strong>Lina El Yacoubi</strong>, a passionate Software Engineering student at uOttawa 🎓. 
+          I’m driven by innovation and love building projects that combine creativity and impact.
+        </p>
+        <p>
+          From developing Android apps 📱 to designing responsive websites 💻, I enjoy turning ideas into real, functional software. 
+          I’m especially interested in accessibility, sustainability, and making tech more inclusive.
+        </p>
+        <p>
+          When I’m not coding, you can find me at the gym 🏋️‍♀️, learning something new, or working on creative side-projects ✨.
+        </p>
+
+
+
+      </div>
+
+
+      <div class="container py-4">
+    <div class="row g-4">
+    
+    <!-- Card 1 -->
+    <div class="col-md-4">
+      <div class="flip-card w-100" style="height: 180px;">
+        <div class="flip-card-inner">
+          <div class="flip-card-front d-flex flex-column justify-content-between align-items-center" style="background-color: #F4A261;">
+            <h5 class="text-center">Programming Languages</h5>
+            <img src="../Portfolio/assets/icon-refelction-type.svg" alt="Icon 1" class="img-fluid" style="max-height: 150px;">
+           
+          </div>
+          <div class="flip-card-back d-flex flex-column justify-content-between align-items-center text-center" style="background-color: #F9F9F9;">
+             <div class="skills-container" style="display: inline-block;">
+              <div class="skill-pill"><i class="fab fa-java" style="color:#007396;"></i> Java</div>
+              <div class="skill-pill"><i class="fab fa-python" style="color:#306998;"></i> Python</div>
+              <div class="skill-pill"><i class="fab fa-js" style="color:#f0db4f;"></i> JavaScript</div>
+              <div class="skill-pill"><i class="fab fa-html5" style="color:#E44D26;"></i> HTML</div>
+              <div class="skill-pill"><i class="fab fa-css3-alt" style="color:#264de4;"></i> CSS</div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4">
+      <div class="flip-card w-100" style="height: 180px;">
+        <div class="flip-card-inner">
+          <div class="flip-card-front d-flex flex-column justify-content-between align-items-center" style="background-color: #2A9D8F;">
+            <h5 class="text-center">Developer Tools & Frameworks</h5>
+            <img src="../Portfolio/assets/icon-refelction-type.svg" alt="Icon 2" class="img-fluid" style="max-height: 150px;">
+            
+          </div>
+          <div class="flip-card-back d-flex flex-column justify-content-between align-items-center text-center" style="background-color: #F9F9F9;">
+            <div class="skills-container" style="display: inline-block;">
+            <div class="skill-pill"><i class="fab fa-bootstrap" style="color:#7952b3;"></i> Bootstrap</div>
+            <div class="skill-pill"><i class="fas fa-code" style="color:#0db7ed;"></i> VS Code</div>
+            <div class="skill-pill"><i class="fas fa-code" style="color:#0078d7;"></i> Visual Studio</div>
+            <div class="skill-pill"><i class="fas fa-file-code" style="color:#f96302;"></i> Sublime Text</div>
+            <div class="skill-pill"><i class="fab fa-android" style="color:#3ddc84;"></i> Android Studio</div>
+            <div class="skill-pill"><i class="fab fa-git-alt" style="color:#f34f29;"></i> Git</div>
+          </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4">
+      <div class="flip-card w-100" style="height: 180px;">
+        <div class="flip-card-inner">
+          <div class="flip-card-front d-flex flex-column justify-content-between align-items-center" style="background-color: #F4A261;">
+            <h5 class="text-center">Data Visualization & Databases</h5>
+            <img src="../Portfolio/assets/icon-refelction-type.svg" alt="Icon 3" class="img-fluid" style="max-height: 150px;">
+           
+          </div>
+          <div class="flip-card-back d-flex flex-column justify-content-between align-items-center text-center" style="background-color: #F9F9F9;">
+            <div class="skills-container" style="display: inline-block;">
+            <div class="skill-pill"><i class="fas fa-chart-bar" style="color:#00a4ef;"></i> Power BI</div>
+            <div class="skill-pill"><i class="fas fa-file-excel" style="color:#217346;"></i> Excel</div>
+            <div class="skill-pill"><i class="fas fa-database" style="color:#6c757d;"></i> Power Query</div>
+            <div class="skill-pill"><i class="fas fa-database" style="color:#6c757d;"></i> T-SQL </div>
+          </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+      
+
+
+    </div>
+  </div>
+</section>
+
+
+
+ 
+      
+
+  <section class="container py-5" id="how-i-work">
+  <h1 class="fw-bold text-center mb-5 display-5 text-gradient" style="background-color: #2A928F;">💼 How I Work</h1>
+
+    <div class="row g-5">
+    <div class="col-lg-6">
+      <h3 class="fw-semibold mb-4" style="color: #F4A261;">
+        📚 What I’m Learning
+      </h3>
+
+      
+      <div class="glass-card mb-4 animate-fade-in">
+        <div class="d-flex align-items-start">
+          <div class="badge-icon bg-primary text-white me-3">🎓</div>
+          <div>
+            <h5 class="fw-bold mb-2">UI Design Course</h5>
+            <p class="text-muted mb-0">
+              Enrolled at <strong>uOttawa</strong> in a UI Design course, I’m learning <span class="badge rounded-pill bg-light text-dark">Figma</span>,
+              <span class="badge rounded-pill bg-light text-dark">Accessibility</span> & <span class="badge rounded-pill bg-light text-dark">UX</span>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    
+      <div class="glass-card animate-fade-in">
+        <div class="d-flex align-items-start">
+          <div class="badge-icon bg-warning text-white me-3">💡</div>
+          <div>
+            <h5 class="fw-bold mb-2">Design Inspiration</h5>
+            <p class="text-muted mb-0">
+              I regularly explore <a href="https://www.nngroup.com/" target="_blank" style="color: #333333;">NN/g</a> to apply <strong>evidence-based UX</strong> and
+              <strong>heuristic evaluations</strong> in my projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="col-lg-6">
+
+      <h3 class="fw-semibold mb-4" style="color: #007396;"> 👩‍💻 My Background</h3>
+
+    
+      <div class="glass-card mb-4 animate-fade-in">
+        <div class="d-flex align-items-start">
+          <div class="badge-icon bg-success text-white me-3">💻</div>
+          <div>
+            <h5 class="fw-bold mb-2">Front-End Developer</h5>
+            <p class="text-muted mb-0">
+              Built responsive websites using <span class="badge rounded-pill bg-light text-dark">HTML</span>,
+              <span class="badge rounded-pill bg-light text-dark">CSS</span>, and <span class="badge rounded-pill bg-light text-dark">JavaScript</span>
+              during my co-op experience.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="glass-card animate-fade-in">
+        <div class="d-flex align-items-start">
+          <div class="badge-icon bg-info text-white me-3">🛠️</div>
+          <div>
+            <h5 class="fw-bold mb-2">Projects</h5>
+            <ul class="mb-0 text-muted">
+              <li><strong>EAMS:</strong> Android event app in Java.</li>
+              <li><strong>Budget Buddy:</strong> Finance tracker (Figma + Code).</li>
+              <li><strong>Focus:</strong> Accessibility & great UX in all my work.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+      
+
+<section class="container py-5" id="case-studies">
+  <h1 class="fw-bold text-center mb-5 display-5 text-gradient">🚀 Projects</h1>
+
+  <div class="row g-4">
+
+    <!-- Project Card -->
+    <div class="col-lg-3">
+      <div class="card border-0 shadow-lg h-100">
+        <img src="assets/service.jpg" class="card-img-top" alt="Service site preview" style="object-fit: cover; height: 280px;">
+        <div class="card-body">
+          <h5 class="fw-bold mb-2"><i class="bi bi-house-heart-fill text-primary me-2"></i>Dental Clinic Web Design</h5>
+          <p class="card-text">A clean and responsive website offering appointment booking, service descriptions, and patient support for a modern dental clinic.</p>
+          <a href="coming-service.html" class="btn btn-outline-primary mt-2">View Project</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Card -->
+    <div class="col-lg-3">
+      <div class="card border-0 shadow-lg h-100">
+        <img src="assets/siteDeJeu.jpeg" class="card-img-top" alt="Game site preview" style="object-fit: cover; height: 280px;">
+        <div class="card-body">
+          <h5 class="fw-bold mb-2"><i class="bi bi-controller text-success me-2"></i>Puzzle Adventure Game</h5>
+          <p class="card-text">A colorful and lightweight browser game that challenges users with logic puzzles and fun interactive levels.</p>
+          <a href="coming-game.html" class="btn btn-outline-success mt-2">Play Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Card -->
+    <div class="col-lg-3">
+      <div class="card border-0 shadow-lg h-100">
+        <img src="assets/ecommerce.jpg" class="card-img-top" alt="E-commerce site preview" style="object-fit: cover; height: 280px;">
+        <div class="card-body">
+          <h5 class="fw-bold mb-2"><i class="bi bi-bag-fill text-warning me-2"></i>Boutique Clothing Store</h5>
+          <p class="card-text">A sleek and functional online boutique with product filtering, a secure checkout, and a fully responsive design.</p>
+          <a href="coming-ecommerce.html" class="btn btn-outline-warning mt-2">Explore Store</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Card -->
+    <div class="col-lg-3">
+      <div class="card border-0 shadow-lg h-100">
+        <img src="assets/data-visualization.webp" class="card-img-top" alt="Analytics preview" style="object-fit: cover; height: 280px;">
+        <div class="card-body">
+          <h5 class="fw-bold mb-2"><i class="bi bi-graph-up-arrow text-danger me-2"></i>Finance Dashboard</h5>
+          <p class="card-text">An interactive dashboard for tracking personal finance, with dynamic charts, KPIs, and visual insights.</p>
+          <a href="coming-analysis.html" class="btn btn-outline-danger mt-2">View Dashboard</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+        
+   
+   
+  </div>
+
+  
+
+<script>
+    const element = document.getElementById("typewriter");
+    const texts = ["Software Engineering Student", "UX/UI Enthusiast", "Creative Developer"];
+    let i = 0;
+    let j = 0;
+    let currentText = "";
+    let isDeleting = false;
+  
+    function type() {
+      currentText = texts[i];
+  
+      if (isDeleting) {
+        element.textContent = currentText.substring(0, j--);
+      } else {
+        element.textContent = currentText.substring(0, j++);
+      }
+  
+      if (!isDeleting && j === currentText.length) {
+        isDeleting = true;
+        setTimeout(type, 1500); // pause before deleting
+      } else if (isDeleting && j === 0) {
+        isDeleting = false;
+        i = (i + 1) % texts.length;
+        setTimeout(type, 500); // pause before typing next
+      } else {
+        setTimeout(type, isDeleting ? 50 : 100); // typing speed
+      }
+    }
+  
+    type();
+
+    
+  </script>
+  
+<script>
+  const btn = document.getElementById('resumeBtn');
+
+  btn.addEventListener('click', function () {
+    // Apply inline style to move the button up
+    btn.style.transform = 'translateY(-10px)';
+    btn.style.transition = 'transform 0.2s ease';
+
+    // Then move it back down after 200ms
+    setTimeout(() => {
+      btn.style.transform = 'translateY(0)';
+    }, 200);
+  });
+</script>
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+
+
+</html>
