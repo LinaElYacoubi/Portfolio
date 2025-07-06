@@ -277,3 +277,24 @@ html, body {
     background-color: #343a40;
     transform: rotateY(180deg);
   }
+
+
+  /* for the project cards */
+
+  .hover-rose {
+  transition: background 0.3s, color 0.3s, border 0.3s;
+}
+.hover-rose:hover, .hover-rose:focus {
+  background-color: #e91e63 !important;
+  color: #fff !important;
+  border-color: #e91e63 !important;
+}
+
+.hover-brown {
+  transition: background 0.3s, color 0.3s, border 0.3s;
+}
+.hover-brown:hover, .hover-brown:focus {
+  background-color: #8B4513 !important;
+  color: #fff !important;
+  border-color: #8B4513 !important;
+}
