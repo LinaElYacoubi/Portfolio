@@ -11,54 +11,51 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"  rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"  rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+
   
     <!-- My CSS code -->
     <link rel="stylesheet" href="style.css">
 
 </head>
 
-<nav class="navbar bg-body-tertiary fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Lina's Portfolio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#how-i-work">How I Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#case-studies">Projects</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+<nav class="navbar fixed-top" style="background-color: #fff;">
+<div class="container-fluid d-flex flex-column align-items-center">
+   
+    <div class="mx-auto">
+      <ul class="nav nav-underline justify-content-center" id="main-navbar">
+         <li class="nav-item">
+        <a class="nav-link" href="#intro" id="home-link">Home</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#about" id="about-link">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#how-i-work" id="how-i-link">How I Work</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#case-studies" id="projects-link">Projects</a>
+      </li>
+</ul>
+    </div>
+  
     </div>
   </nav>
   
   
 
+
 <body>
   
-<section class="container py-5 section-spacing" id="intro">
+<section class="container py-5 section-spacing" id="intro" style="min-height: 70vh; min-width: 20%; align-items: center; justify-content: center;">
   <div class="row align-items-center text-center text-md-start">
     
     
-    <div class="col-md-4 order-1 order-md-2 d-flex justify-content-center mb-4 mb-md-0">
-      <img src="assets/Lina.jpg" alt="Lina's photo" class="profile-pic img-fluid rounded-circle shadow-lg about-photo">
+    <div class="col-md-5 order-1 order-md-2 d-flex justify-content-center mb-4 mb-md-0">
+      <img src="assets/Lina.jpg" alt="Lina's photo" class="profile-pic img-fluid rounded-circle shadow-lg about-photo" >
     </div>
 
-    <div class="col-md-5 order-2 order-md-1">
+    <div class="col-md-4 order-2 order-md-1">
       <h1 class="fw-bold">Lina El Yacoubi</h1>
       <p id="typewriter" class="typewriter-text text-center text-md-start">
         Software Engineering Student
@@ -83,68 +80,65 @@
       <div class="col-md-4 text-center mb-4 mb-md-0">
         <img  src="assets/70cfaa8c-5dba-4697-9fd6-e5c62d15c539.png" alt="Lina El Yacoubi" class="img-fluid rounded-circle shadow-lg about-photo">
       </div>
+      
+
 
       <!-- About Me Text -->
       <div class="col-md-8" >
         <h1 class="fw-bold text-center mb-5 display-5 text-gradient " style="background-color: #2A928F;"> 🌟 About Me</h1>
-        <div class="" >
-          <p class="lead">
-          Hi! I'm <strong>Lina El Yacoubi</strong>, a passionate Software Engineering student at uOttawa 🎓. 
-          I’m driven by innovation and love building projects that combine creativity and impact.
-        </p>
-        <p>
-          From developing Android apps 📱 to designing responsive websites 💻, I enjoy turning ideas into real, functional software. 
-          I’m especially interested in accessibility, sustainability, and making tech more inclusive.
-        </p>
-        <p>
-          When I’m not coding, you can find me at the gym 🏋️‍♀️, learning something new, or working on creative side-projects ✨.
-        </p>
+<div class="about-text">
+  <p class="fade-in-on-scroll">
+    Hi! I'm <span class="highlight">Lina El Yacoubi</span>, a web developer and software engineering student at the University of Ottawa. I love turning creative ideas into accessible, responsive websites with HTML, CSS, and JavaScript.
+  </p>
+  <p class="fade-in-on-scroll" style="margin-top: 1.5em;">
+    I've worked on projects like <span class="highlight">BudgetBuddy</span> and <span class="highlight">SmartScope</span> and during my co-op, I made sure every interface was user-friendly and accessible for everyone. My mission? Create solutions that are not just effective, but actually fun and effortless to use!
+  </p>
+</div>
 
-        </div>
-     
 
 
       </div>
 
 
-      <div class="container py-4">
-    <div class="row g-4">
+     
+      
+    </div>
+
+    <div class="row g-4 mt-3">
+  <!-- Card 1 -->
+   
+  <div class="col-md-4">
     
-    <!-- Card 1 -->
-    <div class="col-md-4">
-      <div class="flip-card w-100" style="height: 180px;">
-        <div class="flip-card-inner">
-          <div class="flip-card-front d-flex flex-column justify-content-between align-items-center" style="background-color: #F4A261;">
-            <h5 class="text-center">Programming Languages</h5>
-            <img src="assets/icon-refelction-type.svg" alt="Icon 1" class="img-fluid" style="max-height: 150px;">
-           
-          </div>
-          <div class="flip-card-back d-flex flex-column justify-content-between align-items-center text-center" style="background-color: #F9F9F9;">
-             <div class="skills-container" style="display: inline-block;">
-              <div class="skill-pill"><i class="fab fa-java" style="color:#007396;"></i> Java</div>
-              <div class="skill-pill"><i class="fab fa-python" style="color:#306998;"></i> Python</div>
-              <div class="skill-pill"><i class="fab fa-js" style="color:#f0db4f;"></i> JavaScript</div>
-              <div class="skill-pill"><i class="fab fa-html5" style="color:#E44D26;"></i> HTML</div>
-              <div class="skill-pill"><i class="fab fa-css3-alt" style="color:#264de4;"></i> CSS</div>
-            </div>
-           
+    <div class="flip-card w-100 fade-in-on-scroll" style="height: 180px;">
+      <div class="flip-card-inner">
+        <div class="flip-card-front d-flex flex-column justify-content-center align-items-center" style="background-color: #F4A261;">
+          <h5 class="text-center mb-2">Programming Languages</h5>
+          <img src="assets/icon-refelction-type.svg" alt="Icon 1" class="img-fluid" style="max-height: 100px;">
+        </div>
+        <div class="flip-card-back d-flex flex-column justify-content-center align-items-center text-center" style="background-color: #F9F9F9;">
+          <div class="skills-container">
+            
+            <div class="skill-pill"><i class="fab fa-html5" style="color:#E44D26;"></i> HTML</div>
+            <div class="skill-pill"><i class="fab fa-css3-alt" style="color:#264de4;"></i> CSS</div>
+            <div class="skill-pill"><i class="fab fa-js" style="color:#f0db4f;"></i> JavaScript</div>
+            <div class="skill-pill"><i class="fab fa-java" style="color:#007396;"></i> Java</div>
+            <div class="skill-pill"><i class="fab fa-python" style="color:#306998;"></i> Python</div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Card 2 -->
-    <div class="col-md-4">
-  <a href="https://alaekabir.github.io/Jeu-de-Memoire/" target="_blank" style="text-decoration: none; color: inherit;">
-    <div class="flip-card w-100" style="height: 180px;">
+  </div>
+  <!-- Card 2 -->
+  <div class="col-md-4">
+    <div class="flip-card w-100 fade-in-on-scroll" style="height: 180px;">
       <div class="flip-card-inner">
-        <div class="flip-card-front d-flex flex-column justify-content-between align-items-center" style="background-color: #2A9D8F;">
-          <h5 class="text-center">Developer Tools & Frameworks</h5>
-          <img src="assets/icon-refelction-type.svg" alt="Icon 2" class="img-fluid" style="max-height: 150px;">
+        <div class="flip-card-front d-flex flex-column justify-content-center align-items-center" style="background-color: #2A9D8F;">
+          <h5 class="text-center mb-2">Developer Tools & Frameworks</h5>
+          <img src="assets/icon-refelction-type.svg" alt="Icon 2" class="img-fluid" style="max-height: 100px;">
         </div>
-        <div class="flip-card-back d-flex flex-column justify-content-between align-items-center text-center" style="background-color: #F9F9F9;">
-          <div class="skills-container" style="display: inline-block;">
-            <div class="skill-pill"><i class="fab fa-bootstrap" style="color:#7952b3;"></i> Bootstrap</div>
+        <div class="flip-card-back d-flex flex-column justify-content-center align-items-center text-center" style="background-color: #F9F9F9;">
+          <div class="skills-container">
+             <div class="skill-pill"><i class="fab fa-react" style="color:#306998;"></i> ReactJS</div>
             <div class="skill-pill"><i class="fas fa-code" style="color:#0db7ed;"></i> VS Code</div>
             <div class="skill-pill"><i class="fas fa-code" style="color:#0078d7;"></i> Visual Studio</div>
             <div class="skill-pill"><i class="fas fa-file-code" style="color:#f96302;"></i> Sublime Text</div>
@@ -154,36 +148,30 @@
         </div>
       </div>
     </div>
-  </a>
-</div>
-
-
-    <!-- Card 3 -->
-    <div class="col-md-4">
-      <div class="flip-card w-100" style="height: 180px;">
-        <div class="flip-card-inner">
-          <div class="flip-card-front d-flex flex-column justify-content-between align-items-center" style="background-color: #F4A261;">
-            <h5 class="text-center">Data Visualization & Databases</h5>
-            <img src="assets/icon-refelction-type.svg" alt="Icon 3" class="img-fluid" style="max-height: 150px;">
-           
-          </div>
-          <div class="flip-card-back d-flex flex-column justify-content-between align-items-center text-center" style="background-color: #F9F9F9;">
-            <div class="skills-container" style="display: inline-block;">
+  </div>
+  <!-- Card 3 -->
+  <div class="col-md-4">
+    <div class="flip-card w-100 fade-in-on-scroll" style="height: 180px;">
+      <div class="flip-card-inner">
+        <div class="flip-card-front d-flex flex-column justify-content-center align-items-center" style="background-color: #F4A261;">
+          <h5 class="text-center mb-2">Data Visualization & Databases</h5>
+          <img src="assets/icon-refelction-type.svg" alt="Icon 3" class="img-fluid" style="max-height: 100px;">
+        </div>
+        <div class="flip-card-back d-flex flex-column justify-content-center align-items-center text-center" style="background-color: #F9F9F9;">
+          <div class="skills-container">
             <div class="skill-pill"><i class="fas fa-chart-bar" style="color:#00a4ef;"></i> Power BI</div>
             <div class="skill-pill"><i class="fas fa-file-excel" style="color:#217346;"></i> Excel</div>
             <div class="skill-pill"><i class="fas fa-database" style="color:#6c757d;"></i> Power Query</div>
             <div class="skill-pill"><i class="fas fa-database" style="color:#6c757d;"></i> T-SQL </div>
-          </div>
             
+            <div class="skill-pill"><i class="fas fa-database" style="color:#6c757d;"></i> SQLite </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+</div>
 
-      </div>
-    </div>
-      
-    </div>
   </div>
 </section>
 
@@ -210,6 +198,7 @@
           <div class="bubble-list-item"><span>🔎</span> Obsessive Googling & brainstorming</div>
           <div class="bubble-list-item"><span>💬</span> Asking questions nobody asks</div>
           <div class="bubble-list-item"><span>🎧</span> User interviews & empathy mode</div>
+          <div class="bubble-list-item"><span>🎯</span>Applying goal-directed design patterns</div>
         </div>
       </div>
     </div>
@@ -227,9 +216,10 @@
       <div class="bubble-details">
         <div class="bubble-list">
           <div class="bubble-list-item"><span>🖌️</span> Figma mockups & prototyping</div>
-          <div class="bubble-list-item"><span>🎨</span> Palette experiments (always orange or turquoise!)</div>
-          <div class="bubble-list-item"><span>🦄</span> Making everything ✨aesthetic✨ and accessible</div>
-        </div>
+          <div class="bubble-list-item"><span>🎨</span> Palette experiments (color contrast & accessibility)</div>
+          <div class="bubble-list-item"><span>🦄</span> Making everything user-friendly and accessible</div>
+          <div class="bubble-list-item"><span>🧠</span> Applying cognitive principles </div>
+        </div> 
       </div>
     </div>
 
@@ -247,7 +237,8 @@
         <div class="bubble-list">
           <div class="bubble-list-item"><span>⚡</span> React, HTML/CSS, and fun JavaScript</div>
           <div class="bubble-list-item"><span>🪄</span> Animations that spark joy</div>
-          <div class="bubble-list-item"><span>🧪</span> Testing (and lots of console.log 😅)</div>
+          <div class="bubble-list-item"><span>🧪</span> Testing (including user feedback & usability tests) </div>
+          <div class="bubble-list-item"><span>🕵️‍♀️</span> Checking against Nielsen's heuristics </div>
         </div>
       </div>
     </div>
@@ -258,21 +249,23 @@
         <span class="bubble-icon" style="background: linear-gradient(135deg, #F4A261 60%, #2A9D8F 120%);">🚀</span>
         <div>
           <h3>Deliver & Grow</h3>
-          <p class="bubble-sub">Always shipping. Always learning. Always leveling up!</p>
+          <p class="bubble-sub">Always learning. Always leveling up!</p>
         </div>
         <span class="expand-arrow"><i class="fa fa-chevron-down"></i></span>
       </div>
       <div class="bubble-details">
         <div class="bubble-list">
-          <div class="bubble-list-item"><span>🚦</span> Fast launches & quick demos</div>
+          <div class="bubble-list-item"><span>🚦</span> Quick demos</div>
           <div class="bubble-list-item"><span>💌</span> Collecting real feedback (even the scary kind)</div>
           <div class="bubble-list-item"><span>🔄</span> Iterate, iterate, iterate!</div>
+          <div class="bubble-list-item"><span>📊</span> Using analytics, surveys & A/B testing to evaluate & improve </div>
         </div>
       </div>
     </div>
 
   </div>
 </section>
+
 
       
 
@@ -355,7 +348,7 @@
         <div class="card-body">
           <h5 class="fw-bold mb-2"><i class="bi bi-graph-up-arrow text-primary  me-2"></i>Weather Dashboard</h5>
           <p class="card-text">A modern dashboard for visualizing the weather: dynamic charts, interactive stats, and smart insights.</p>
-          <a href="https://dashboa.netlify.app/" class="btn btn-outline-primary  mt-2">View Dashboard</a>
+          <a href="https://dashboa.netlify.app/" class="btn btn-outline-primary  mt-2" target="_blank">View Dashboard</a>
         </div>
       </div>
     </div>
@@ -389,13 +382,13 @@
   
       if (!isDeleting && j === currentText.length) {
         isDeleting = true;
-        setTimeout(type, 1500); // pause before deleting
+        setTimeout(type, 1500); 
       } else if (isDeleting && j === 0) {
         isDeleting = false;
         i = (i + 1) % texts.length;
-        setTimeout(type, 500); // pause before typing next
+        setTimeout(type, 500); 
       } else {
-        setTimeout(type, isDeleting ? 50 : 100); // typing speed
+        setTimeout(type, isDeleting ? 50 : 100); 
       }
     }
   
@@ -404,8 +397,10 @@
     
   </script>
   
+
  <script>
-function toggleBubble(card) {
+
+  function toggleBubble(card) {
   // Close others
   document.querySelectorAll('.bubble-card').forEach(function(el) {
     if (el !== card) el.classList.remove('active');
@@ -416,11 +411,117 @@ function toggleBubble(card) {
 </script>
 
 
+<script>
+document.querySelectorAll('.nav-underline .nav-link').forEach(function(link) {
+  link.addEventListener('click', function() {
+    document.querySelectorAll('.nav-underline .nav-link').forEach(function(nav) {
+      nav.classList.remove('active');
+    });
+    this.classList.add('active');
+  });
+});
+</script>
 
 
 
+<script>
+const sections = ['home', 'about', 'how-i-work', 'case-studies'];
+const navLinks = sections.map(id => document.getElementById('nav-' + (id === 'home' ? 'home' : id.replace('how-i-work','how'))));
+
+function setActive(id) {
+  navLinks.forEach(link => link.classList.remove('active'));
+  const activeLink = document.getElementById('nav-' + (id === 'home' ? 'home' : id.replace('how-i-work','how')));
+  if (activeLink) activeLink.classList.add('active');
+}
+
+window.addEventListener('scroll', () => {
+  let current = 'home';
+  sections.forEach(id => {
+    const section = document.getElementById(id);
+    if (section && window.scrollY >= section.offsetTop - 70) {
+      current = id;
+    }
+  });
+  setActive(current);
+});
+
+// For click navigation
+navLinks.forEach(link => {
+  link.addEventListener('click', function(e) {
+    setTimeout(() => setActive(this.getAttribute('href').substring(1)), 100);
+  });
+});
+</script>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll(".nav-link[href^='#']");
   
+  function activateLink() {
+    let index = sections.length;
+    while(--index && window.scrollY + 90 < sections[index].offsetTop) {} // 90 for navbar height offset
+    navLinks.forEach((link) => link.classList.remove("active"));
+    if (sections[index]) {
+      let id = sections[index].id;
+      let link = document.querySelector(`.nav-link[href="#${id}"]`);
+      if (link) link.classList.add("active");
+    }
+  }
+  
+  activateLink();
+  window.addEventListener("scroll", activateLink);
+
+  //  keep .active on click for transitions
+  navLinks.forEach(link => {
+    link.addEventListener("click", function() {
+      navLinks.forEach(l => l.classList.remove("active"));
+      this.classList.add("active");
+    });
+  });
+});
+</script>
+
+
+
+
+<script>
+  function revealSections() {
+  document.querySelectorAll('.section-spacing').forEach(sec => {
+    const rect = sec.getBoundingClientRect();
+    if(rect.top < window.innerHeight-80) {
+      sec.classList.add('visible');
+    }
+  });
+}
+window.addEventListener('scroll', revealSections);
+window.addEventListener('DOMContentLoaded', revealSections);
+
+</script>
+
+<script>
+ function revealOnScroll() {
+  document.querySelectorAll('.fade-in-on-scroll').forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 40 && rect.bottom > 60) {
+      el.classList.add('visible');
+    } else {
+      el.classList.remove('visible');
+      el.style.transitionDelay = ''; // reset delay
+    }
+  });
+}
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('DOMContentLoaded', revealOnScroll);
+
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
 </body>
 
 
